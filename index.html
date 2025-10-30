@@ -1,0 +1,1041 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.0/mdb.min.css"
+  rel="stylesheet"/>
+    <title>Hyanna Mae D. Esperon | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    
+    body{
+      background-image: url("Offset Blobs.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      background
+    }
+
+    #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  font-family: 'Geologica';
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      .btn-check:checked + .btn {
+      background-color: #6dbecb;
+      color: #ffffff;
+      border-color: #6dbecb;
+    }
+
+    .btn-outline-primary {
+      color: #6dbecb;
+      border-color: #6dbecb;
+      background-color: white;
+      font-size: larger;
+    }
+      
+      @font-face{
+        font-family: 'Geologica';
+        src: url(Geologica.ttf);
+      }
+
+      @font-face{
+        font-family: 'Fat Kat';
+        src: url(Fat Kat.ttf);
+      }
+
+      .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+      .content-section {
+        display: none;
+        margin-top: 20px;
+      }
+
+      h2{
+        color: #6dbecb;
+        font-family: 'Fat Kat';
+      }
+
+      p{
+        font-family: 'Geologica';
+      }
+
+      h3{
+        font-family: "Geologica"
+      }
+      
+      .content-section.active {
+        display: block;
+      }
+
+      .bg{
+        display: grid;
+        height: 100%;
+      }
+      
+      iframe{
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+      }
+
+      .center-fit {
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+      }
+
+      .btn-primary {
+        background-color: #f9d648 !important;
+        border-color: #f9d648 !important;
+        font-family: 'Geologica';
+      }
+      .btn-primary:hover {
+        background-color: #fbaf57 !important;
+        border-color: #fbaf57 !important;
+      }
+
+      .col{
+        text-align: left;
+      }
+
+      .scrollspy-example {
+      height: 55vh;              /* adjust how tall you want it */
+      overflow-y: auto;          /* makes it scrollable */
+      scroll-behavior: smooth;
+      max-width: 65%;
+    }
+
+    .scroll-box {
+  height: 50vh; /* adjust as needed */
+  max-width: 65%;
+  overflow-y: auto;  /* vertical scroll */
+  overflow-x: hidden;
+  padding-right: 10px; /* avoid cutting off scrollbar */
+}
+    </style>
+  
+ <!-- HTML -->
+
+</head>
+
+  <body>
+     <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button> 
+  <div class="bg">
+    <img class= "center-fit" src="Img/Portfolio.png">
+  </div>
+
+  <div class="text-center p-4">
+    <div class="btn-group flex-wrap my-3" role="group" aria-label="Portfolio Sections">
+      <input type="radio" class="btn-check" name="btnradio" id="uiux" autocomplete="off" checked>
+      <label class="btn btn-outline-primary" for="uiux" style="font-family: Geologica">UI & Web Development</label>
+
+      <input type="radio" class="btn-check" name="btnradio" id="animation" autocomplete="off">
+      <label class="btn btn-outline-primary" for="animation" style="font-family: Geologica">2D/3D Animation</label>
+
+      <input type="radio" class="btn-check" name="btnradio" id="graphic" autocomplete="off">
+      <label class="btn btn-outline-primary" for="graphic" style="font-family: Geologica">Graphic Design and Layout</label>
+
+      <input type="radio" class="btn-check" name="btnradio" id="photo" autocomplete="off">
+      <label class="btn btn-outline-primary" for="photo" style="font-family: Geologica">Photography</label>
+
+      <input type="radio" class="btn-check" name="btnradio" id="digital" autocomplete="off">
+      <label class="btn btn-outline-primary" for="digital" style="font-family: Geologica">Digital Illustrations</label>
+
+      <input type="radio" class="btn-check" name="btnradio" id="film" autocomplete="off">
+      <label class="btn btn-outline-primary" for="film" style="font-family: Geologica">Film & Editing</label>
+
+      <input type="radio" class="btn-check" name="btnradio" id="Social" autocomplete="off">
+      <label class="btn btn-outline-primary" for="Social" style="font-family: Geologica">Social Media Managing</label>
+    </div>
+
+    <!-- Content Sections -->
+    <div id="uiux-content" class="content-section active">
+      <h2>User Interface Design & Website Development</h2>
+      <br><br>
+
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Img\Website.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Dark Media Unveiled</h3>
+          <p style="font-style: italic;">Software used: Sublime (HTML and CSS)</p><br>
+          <p>An article website that tackles interactive thriller media. We are not required to build are own website, but as the theme suggest, we added <i>thrill</i> on working on our creativity.</p>
+          <a class="btn btn-primary" style="font-family: Geologica" href="https://yanamiyans.github.io/Dark-Media-Unvailed/index.html" target="_blank" role="button">Click to View</a>
+        </div>
+      </div>
+      </div>
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Img\Kootsinta.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Kootsinta</h3>
+          <p style="font-style: italic;">Software used: Adobe Xd (UI Layout), Adobe Illustrator (Logo)</p>
+          <p>A food ordering and delivery application centered for Filipino sweet delicacies. KootSinta is inspired by a Filipino rice cake called <i>kutsinta</i>. To add playfulness into it, the letter u was replaced by a double o that turned into 2 kutsinta shaped like a heart. The name is also mixed with the word sinta, meaning "lover", because who wouldn't fall in love with something sweet?</p>
+          <a class="btn btn-primary" href="https://xd.adobe.com/view/b728b7fa-0d5d-4c61-910a-e7317ee6e5a9-e27b/?fullscreen" target="_blank" role="button">Click to View</a>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="row">
+        <div class="col">
+          <img src="Img\BMA.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>FEUA APP</h3>
+          <p style="font-style: italic;">Software used: Adobe Xd (UI Layout)</p>
+          <p>This Mobile app UI design is referenced from the official website of the school. The working buttons only focuses on Multimedia Arts course (Totally not biased. That was the instruction).</p>
+          <a class="btn btn-primary" href="https://xd.adobe.com/view/c4272ce6-7241-4829-8b63-a693cc5ce64e-9174/" target="_blank" role="button">Click to View</a>
+        </div>
+      </div>
+      </div>      
+      </div>
+
+    <div id="animation-content" class="content-section">
+      <h2>2D/3D Animation</h2>
+      <br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tTLi8f4dQTE?si=yF78xglZx9ruGmyD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col">
+          <h3>Walking Capybara</h3>
+          <p style="font-style: italic;">Software used: Autodesk Maya</p><br>
+          <p>A test 3D walking animation of my own animal model and environment. Can capybaras even survive the icy weather?</p>
+        </div>
+      </div>
+      </div>
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/jBUbTIUh1wE?si=6udFxlN5BHhmyvze" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col">
+          <h3>Cookie Cat Car and Perry the Platicopter - 3D Vehicle Animation</h3>
+          <p style="font-style: italic;">Software used: Autodesk Maya</p>
+          <p>What if Steven Universe and Phineas and Ferb had a collaboration? This test vehicle animation combines both car and helicopter movement study while reusing the environment from the capybara walking cycle. Anyone interested on Cookie Cat and Perry the platypus fanfiction?</p>
+        </div>
+      </div>
+      </div>
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/4o2zy_hCaTk?si=oq-qRkiPJh71P1ez" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col">
+          <h3>OC sketch animatic</h3>
+          <p style="font-style: italic;">Software used: Adobe Phototshop (Drawing), Toonboom Harmony (Animation)</p>
+          <p>Putting my first original characters on the test.</p>
+        </div>
+      </div>
+      </div>
+      <br><br><br>
+       <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Gif\Steven.gif" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Steven Universe Gif Stickers</h3>
+          <p style="font-style: italic;">Software used: Adobe Animate</p>
+          <p>Facial expression study. 3 moods of how I feel when animating.</p>
+        </div>
+        </div>
+      </div>
+      <br><br><br>
+       <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Gif\Hello Kitty.gif" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Hello Kitty Gif Stickers</h3>
+          <p style="font-style: italic;">Software used: Adobe Animate</p>
+          <p>Facial expression and body animation study. Do I pass as a Facebook Messenger sticker creator?</p>
+          </div>
+          </div>
+      </div>
+      <br><br><br>
+       <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <iframe src="https://scratch.mit.edu/projects/632184556/embed" allowtransparency="true" width="500" height="430" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="col">
+          <h3>Soliloquy of the Stars</h3>
+          <p style="font-style: italic;">Software used: Aseprite</p>
+          <p>A game project made during my Senior High School where I’ve animated the opening sequence and characters. This is when I discovered that Information Technology is not for me.</p>
+          <a class="btn btn-primary" href="https://scratch.mit.edu/projects/632184556/fullscreen/" target="_blank" role="button">Play on fullscreen</a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div id="graphic-content" class="content-section">
+      <h2>Graphic Design & Layout</h2>
+      <br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+        <center><a href="https://heyzine.com/flip-book/51ff74a558.html" target="_BLANK" class="heyzine-link fp-link" data-heyzine-open="modal"><img src="https://cdnc.heyzine.com/flip-book/cover/51ff74a558.jpg" class="fp-thumb" style="border: 1px solid lightgray; box-shadow: lightgray 0px 0px 4px 1px; width: 250px;"></a></center>
+        </div>
+        <div class="col">
+          <h3>Kasay-sayin Magazine: Wonders of Manila</h3>
+          <p style="font-style: italic;">Software used: Adobe Photoshop (Text Elements), Adobe InDesign (Magazine Layout)</p><br>
+          <p>I love K-Zone (obviously), which is why I created a layout inspired by the magazine’s style. My team explored museums around Manila, while I visited the nearby monuments. The photos used in the magazine layout were all originally taken by our team. I am proud to say that this magazine was brought to life by our <s>blood,</s> sweat, <s>and tears.</s></p>
+          <p><i>Click the magazine on the left for the full magazine view.</i></p>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="row">
+        <div class="col">
+          <center><a href="https://heyzine.com/flip-book/d0dc6c9e30.html" target="_BLANK" class="heyzine-link fp-link" data-heyzine-open="modal"><img src="https://cdnc.heyzine.com/flip-book/cover/d0dc6c9e30.jpg" class="fp-thumb" style="border: 1px solid lightgray; box-shadow: lightgray 0px 0px 4px 1px; width: 250px;"></a></center>
+        </div>
+        <div class="col">
+          <h3>Mulat Publishing: Little Lina</h3>
+          <p style="font-style: italic;">Software used: Adobe InDesign (Book Layout), Adobe Photoshop (Text Elements)</p>
+          <p>This book is created to spread awareness to young readers about the situation in Palestine, dedicated for the children affected by the war.</p>
+          <p><i>Click the magazine on the left for the full magazine view.</i></p>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Img\VMC.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>School Campaign Publication Material for The Visionary Media Coalition</h3>
+          <p style="font-style: italic;">Software used: Adobe Photoshop (Layout), Freepik/Canva (Elements)</p><br>
+          <p>Making our own campaign material for the upcoming school election for S.Y. 2024 - 2025. Now three years as an executive of The Visionary Media Coalition.</p>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="row">
+        <div class="col">
+          <img src="Img\CRCY.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Main and Countdown Publication Material for College of Red Cross Youth</h3>
+          <p style="font-style: italic;">Software used: Adobe Illustrator (Layout), Freepik/Canva (Elements)</p>
+          <p>Thank you pinterest for the inspiration!</p>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="row">
+        <div class="col">
+          <img src="Img\NP.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Balitang Ina Newspaper</h3>
+          <p style="font-style: italic;">Software used: Adobe Photoshop (Overlay), Adobe Illustrator (Layout)</p>
+          <p>A Reading in Ph History project that tackles Agrarian Reform in the Philippnines.</p>
+          </div>
+      </div>
+      <br><br><br>
+      <div class="row">
+        <div class="col">
+           <img src="Img\FP.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Nasaan Ang Grasya Poster</h3>
+          <p style="font-style: italic;">Software used: Adobe Photoshop (Overlay/Text Element), Adobe Illustrator (Layout), Freepik (Elements)</p>
+          <p>A heavy drama and thriller film, which explains the melancholic design of the poster.</p>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="row">
+        <div class="col">
+           <img src="Img\Typoo.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Typography Study</h3>
+          <p style="font-style: italic;">Software used: Adobe Illustrator</p>
+          <p>Inspired by layouts that take the shape of an object, this design uses lyrics from the song <i>“Diet Coke”</i> arranged in the shape of a can to mimic the look of a Coke can. Stream Diet Coke by Leanna Firestone!</p>
+        </div>
+        </div>
+        <br><br><br>
+      <div class="row">
+        <div class="col">
+           <img src="Img\Typo.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Lambscript</h3>
+          <p style="font-style: italic;">Software used: Adobe Illustrator</p>
+          <p>Inspired by Cult of the Lamb, this font lives up to its name. If you want to build a cult, please use this typeface.</p>
+        </div>
+      </div>
+       <br><br><br>
+      <div class="row">
+        <div class="col">
+           <img src="Img\TP.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>National Bookstore Publication Material</h3>
+          <p style="font-style: italic;">Software used: Adobe Photoshop (Light Effect), Adobe Illustrator (Layout)</p>
+          <p>Nope, I haven’t worked with National Bookstore (yet)! This is a “what if” concept imagining what it would look like if National Bookstore opened in South Korea. A little teaser for its “international debut.”</p>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="row">
+        <div class="col">
+           <img src="Img\H-1.jpg" class="img-fluid rounded">
+           <img src="Img\H-2.jpg" class="img-fluid rounded">
+           <img src="Img\H-3.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Film Production Publicity Materials</h3>
+          <p style="font-style: italic;">Software used: Canva, Adobe Photoshop, Adobe Illustrator</p>
+          <p>Some of the graphic designs I worked on. (last photo) Product captured with Canon EOS R10, zoom lens </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <div id="photo-content" class="content-section">
+      <h2>Photography</h2>
+      <br><br>
+      <div class="container text-center" >
+      <div class="row">
+        <div class="col">
+        <img src="Img\1.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>D2D Vault: Rush Hour Fatigue</h3>
+          <p style="font-style: italic;">Software used: Adobe Lightroom, Equipment: Canon R10, Zoom Lens</p><br>
+          <p>D2D, short for Day-to-Day Vault, is where I keep snapshots of the little stories and moments I come across every day. This photo pretty much sums up those awful rush hour nights where four hours of my life gone every day to traffic jams (thanks, Alabang–Zapote Road).</p>
+        </div>
+      </div>
+      </div> 
+      <br><br><br>
+      <div class="container text-center" >
+      <div class="row">
+        <div class="col">
+        <img src="Img\Ab-1.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>D2D Vault: Piano Man</h3>
+          <p style="font-style: italic;">Software used: Adobe Lightroom, Equipment: Canon R10, Zoom Lens</p><br>
+          <p>Many gazed upon the man, many chose to pass by.</p>
+        </div>
+      </div>
+      </div> 
+      <br><br><br>
+       <div class="container text-center" >
+      <div class="row">
+        <div class="col">
+        <img src="Img\A.png" class="img-fluid rounded"><br><br>
+        <img src="Img\B.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Product Photography</h3>
+          <p style="font-style: italic;">Software used: Adobe Lightroom, Equipment: Canon R10, Zoom Lens</p><br>
+          <p>Experimenting with the right elements and right light (pun intended) with natural and artificial light and setting. Lychee + Rose flavor (Artificial elements), Orange  flavor(Natural elements).</p>
+        </div>
+      </div>
+      </div> 
+      <br><br><br>
+
+    <div class="row">
+      <h3>Itam Night 2023</h3>
+      <p style="font-style: italic;">Software used: Adobe Lightroom, Equipment: Canon R10, Zoom Lens</p>
+      <p>First Media Coverage as a photojournalist of The Visionary Media Coalition.</p>
+      <div class="column">
+        <img src="Img\A-3.png">
+        <img src="Img\A-9.png">
+      </div>
+      <div class="column">
+        <img src="Img\A-2.png">
+        <img src="Img\A-6.png">
+        <img src="Img\A-5.png">
+        <img src="Img\A-12.png">
+      </div>
+      <div class="column">
+       <img src="Img\A-1.png">
+        <img src="Img\A-7.png">
+        <img src="Img\A-8.png">
+        <img src="Img\A-11.png">
+      </div>
+      <div class="column">
+       <img src="Img\A-4.png">
+       <img src="Img\A-10.png">
+      </div>
+      </div>
+    <br><br><br>
+    <div class="row">
+      <h3>ATAMaraw Glow Fest 2024</h3>
+      <p style="font-style: italic;">Software used: Adobe Lightroom, Equipment: Canon R10, Zoom Lens</p>
+      <p>First concert that happened in our university.</p>
+      <div class="column">
+        <img src="Img\D-1.jpg">
+        <img src="Img\D-2.jpg">
+        <img src="Img\D-3.jpg">
+        <img src="Img\D-4.jpg">
+        <img src="Img\D-5.jpg">
+      </div>
+      <div class="column">
+        <img src="Img\D-6.jpg">
+        <img src="Img\D-7.jpg">
+        <img src="Img\D-8.jpg">
+        <img src="Img\D-9.jpg">
+        <img src="Img\D-10.jpg">
+      </div>
+      <div class="column">
+        <img src="Img\D-11.jpg">
+        <img src="Img\D-12.jpg">
+        <img src="Img\D-13.jpg">
+        <img src="Img\D-14.jpg">
+        <img src="Img\D-15.jpg">
+      </div>
+      <div class="column">
+        <img src="Img\D-16.jpg">
+        <img src="Img\D-17.jpg">
+        <img src="Img\D-18.jpg">
+        <img src="Img\D-19.jpg">
+        <img src="Img\D-20.jpg">
+      </div>
+      </div>
+      <br><br><br>
+      <div class="row">
+      <h3>Spookytams 2024</h3>
+      <p style="font-style: italic;">Software used: Adobe Lightroom, Equipment: Canon R10, Zoom Lens</p>
+      <p>Bethany Villarojo as Rapunzel for a cosplay photoshoot.</p>
+      <div class="column">
+        <img src="Img\B-1.png">
+      </div>
+      <div class="column">
+        <img src="Img\B-2.png">
+      </div>
+      <div class="column">
+       <img src="Img\B-3.png">
+      </div>
+      <div class="column">
+        <img src="Img\B-4.png">
+      </div>
+      </div>
+      <br><br><br>
+      <div class="row">
+      <h3>Lost in Manila</h3>
+      <p style="font-style: italic;">Software used: Adobe Lightroom, Equipment: Canon R10, Zoom Lens</p>
+      <div class="column">
+        <img src="Img\C-8.png">
+        <img src="Img\C-12.png">
+      </div>
+      <div class="column">
+        <img src="Img\C-1.png">
+        <img src="Img\C-5.png">
+        <img src="Img\C-9.png">
+      </div>
+      <div class="column">
+        <img src="Img\C-2.png">
+        <img src="Img\C-7.png">
+        <img src="Img\C-10.png">
+      </div>
+      <div class="column">
+       <img src="Img\C-3.png">
+       <img src="Img\C-6.png">
+       <img src="Img\C-4.png">
+      </div>
+      </div>
+      <br><br><br>
+      <div class="row">
+      <h3>Annual Leadership Training and Seminar 2025</h3>
+      <p style="font-style: italic;">Software used: Adobe Lightroom, Equipment: Canon R10, Zoom Lens</p>
+      <p>A one-man three day coverage for this year's ALTS, capturing the essence of being a studnt leader in FEU ADT (Alabang, Diliman, and Tech).</p>
+      <div class="column">
+        <img src="Img\F-1.jpg">
+        <img src="Img\F-5.jpg">
+        <img src="Img\F-9.jpg">
+        <img src="Img\F-14.jpg">
+      </div>
+      <div class="column">
+        <img src="Img\F-2.jpg">
+        <img src="Img\F-7.jpg">
+        <img src="Img\F-10.jpg">
+        <img src="Img\F-15.jpg">
+      </div>
+      <div class="column">
+       <img src="Img\F-3.jpg">
+       <img src="Img\F-6.jpg">
+       <img src="Img\F-11.jpg">
+       <img src="Img\F-12.jpg">
+      </div>
+      <div class="column">
+        <img src="Img\F-4.jpg">
+        <img src="Img\F-8.jpg">
+        <img src="Img\F-13.jpg">
+      </div>
+      </div>
+    <br><br><br>
+      <div class="row">
+      <h3>Confessions at Track #5</h3>
+      <p style="font-style: italic;">Software used: Adobe Lightroom, Equipment: Sony A6400, Kit Lens</p>
+      <p>Thesis film posters.</p>
+      <div class="column">
+      </div>
+      <div class="column">
+        <img src="Img\CAT 5 POSTER.png">
+      </div>
+      <div class="column">
+       <img src="Img\Aa-1.png">
+      </div>
+      <div class="column">
+      </div>
+      </div>
+    </div>
+    
+    <div id="digital-content" class="content-section">
+      <h2>3D Illustrations</h2>
+      <br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Img\Capy.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>La Capybara Spring</h3>
+          <p style="font-style: italic;">Software used: Autodesk Maya</p><br>
+          <p>Putting Monsieur Bara on the right environment. Everthing is modeled and textured thoroughly (3D - 1, sleep - 0).</p>
+        </div>
+      </div>
+      </div> 
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Img\Front.jpg" class="img-fluid rounded">
+          <br><br>
+          <img src="Img\Left side.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Wooden Kalimba</h3>
+          <p style="font-style: italic;">Software used: Autodesk Maya</p><br>
+          <p>A recreation of my own kalimba. Even putting in the small details that is not visible on the camera.</p>
+        </div>
+      </div>
+      </div> 
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Img\Rendered 1.jpg" class="img-fluid rounded">
+          <br><br>
+          <img src="Img\Rendered 2.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Ceramic Vase: Raining Petals</h3>
+          <p style="font-style: italic;">Software used: Autodesk Maya</p><br>
+          <p>Imagine the Beast's flower but darker. Imagine kintsugi but with blood.</p>
+        </div>
+      </div>
+      </div> 
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Img\Burn 1.jpg" class="img-fluid rounded">
+          <br><br>
+          <img src="Img\Burn 2.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Wood Burner: The Burning Death</h3>
+          <p style="font-style: italic;">Software used: Autodesk Maya</p><br>
+          <p>Maybe a new Five Night's at Freddy's character.</p>
+        </div>
+      </div>
+      </div> 
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Img\Can 1.jpg" class="img-fluid rounded">
+          <br><br>
+          <img src="Img\Can 2.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Can: Shroom Zoom</h3>
+          <p style="font-style: italic;">Software used: Autodesk Maya</p><br>
+          <p>Is this what zombies drink? Zombie zoomies in a can.</p>
+        </div>
+      </div>
+      </div> 
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Img\Melody 1.jpg" class="img-fluid rounded">
+          <br><br>
+          <img src="Img\Melody 2.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Melody</h3>
+          <p style="font-style: italic;">Software used: Autodesk Maya</p><br>
+          <p>We made our film’s main character, Melody, and 3D-printed her later on… which nearly wiped out our group’s budget! Texturing by Paulo Nebria.</p>
+        </div>
+      </div>
+      </div> 
+      <br><br><br>
+      <h2>2D Illustrations</h2><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Img\Huling Merienda.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Ang Huling Merienda</h3>
+          <p style="font-style: italic;">Software used: Clip Studio Paint</p><br>
+          <p>An editorial cartoon depicting the farmer's tragedy in the case of Hacienda Luisita Massacre.</p>
+        </div>
+      </div>
+      </div> 
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Img\Cone 1.png" class="img-fluid rounded"><br><br>
+          <img src="Img\Cone 2.png" class="img-fluid rounded"><br><br>
+          <img src="Img\Cone 3.png" class="img-fluid rounded"><br><br>
+          <img src="Img\Cone 4.png" class="img-fluid rounded"><br><br>
+          <img src="Img\Cone 5.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Connie the Cone Head</h3>
+          <p style="font-style: italic;">Software used: Toonboom Harmony</p><br>
+          <p>My first OC that is inspired by a series and game called <i>Cuphead</i>. This is a character body movement study, exaggerating every movement to make it more appealing.</p>
+        </div>
+      </div>
+      </div>
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Img\owl house oc.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Lorene</h3>
+          <p style="font-style: italic;">Software used: Medibang Paint</p><br>
+          <p>An OC with an artstyle from a cartoon series called <i>The Owl House.</i></p>
+        </div>
+      </div>
+      </div> 
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Img\Twitch emotes.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Twitch emotes</h3>
+          <p style="font-style: italic;">Software used: Medibang Paint</p><br>
+          <p>My first emote commission from a twitch streamer.</p>
+        </div>
+      </div>
+      </div> 
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Img\ash w bg.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Youtube Profile</h3>
+          <p style="font-style: italic;">Software used: Autodesk Maya</p><br>
+          <p>Commissioned by a friend for her youtube profile.</p>
+        </div>
+      </div>
+      </div>
+      <br><br><br>
+    </div>
+
+    <div id="film-content" class="content-section">
+      <h2>Film Projects and Editing</h2>
+      <br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/BQKFSJTxy0I?si=N1JIifmBvJufTxhD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col">
+          <h3>Inside The Empty Box</h3>
+          <p style="font-style: italic;">Software used: Capcut, Equipment: POCO M4 Pro</p><br>
+          <p>Have you ever wondered what is going on inside an ADHD brain? As a self diagnosed person with ADHD, this is just the tip of the iceburg.</p>
+          <p>Role/s: Director and editor</p>
+        </div>
+      </div>
+      </div> 
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/vp0WXz6zmaQ?si=usJT-c3C1b98tf2O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col">
+          <h3>12 MD Short Film</h3>
+          <p>First film project in college.</p>
+          <p>Role/s: Assistant director, scriptwriter, second female lead</p>
+        </div>
+      </div>
+      </div>
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/FCsrOIQ6KXA?si=PGlF4eCHqN3zp94x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col">
+          <h3>Kapag Tumibok Ang Puso Lyric/Music Video</h3>
+          <p style="font-style: italic;">Software used: Adobe Premiere Pro and Adobe After Effects</p>
+          <p>Another minor project for our thesis because the 3D model did not pass the panelist's criteria.</p>
+          <p>Role/s: Director and master editor</p>
+        </div>
+      </div>
+      </div>
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/pHk6U6zwqL8?si=6DeUSUC83fzGcRUG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col">
+          <h3>Recreated Clover Commercial</h3>
+          <p style="font-style: italic;">Equipment: Sony A6400</p>
+          <p>This is a recreated advertisement from Clover. Those cheese powder might not be enough (Too much!).</p>
+          <p>Role/s: Director and camera operator</p>
+        </div>
+      </div>
+      </div>
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/evEXY3PyYgk?si=4_2VQrwXH7qWTU3P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col">
+          <h3>Nasaan Ang Grasya</h3>
+          <p style="font-style: italic;">Software used: Adobe Premiere Pro</p>
+          <p>Timestamp of scenes I worked on: 2:30 - 9:00, 18:10 - 19:57, 21:05 - 25:05</p>
+          <p>Role/s: Sound designer, marketing head, production assistant, sound operator, cast</p>
+        </div>
+      </div>
+      </div>
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/JZ2gHmFJ5bM?si=GKnWLKkS83vVsBgL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col">
+          <h3>Sari-Sari Stories</h3>
+          <p style="font-style: italic;">Software used: Adobe Premiere Pro</p>
+          <p>Circling around Aling Nena's wholesome ecnounter in her mini sari-sari store.</p>
+          <p>Role/s: Sound designer and narrator</p>
+        </div>
+      </div>
+      </div>
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/OJ3skI-rC6E?si=Qd6EJRebB5NVvgA2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col">
+          <h3>Confessions at Track #5</h3>
+          <p>Thesis major project.</p>
+          <p>Role/s: Producer, camera operator, social media manager</p>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/uw09aVwZbHE?si=yqUPb-pLtllJqGup" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col">
+          <h3>Aphrodite Music Video</h3>
+          <p style="font-style: italic;">Software used: Adobe Premiere Pro</p>
+          <p>Role/s: Asistant director, editor</p>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/4_1wDVpPfSc?si=Uisfm2ADkSjOtj_h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col">
+          <h3>Behind The Lens BTS</h3>
+          <p style="font-style: italic;">Software used: Capcut</p>
+          <p>Role/s: Production Assistant, BTS editor</p>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Swlu0VDH0VA?si=CFLGJH9D-NTPM1_K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col">
+          <h3>Paperman Sound Design</h3>
+          <p style="font-style: italic;">Software used: Adobe Premiere Pro</p>
+          <p>Role/s: Sound Designer</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+      <div id="Social-content" class="content-section">
+      <h2>Social Media Managing</h2>
+      <br><br>
+
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Img\MMP.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Motus Memorias Productions</h3>
+          <p>Film production</p>
+          <p>Role/s: Social media manager, marketing head, and graphic artist</p>
+          <a class="btn btn-primary" style="font-family: Geologica" href="https://web.facebook.com/profile.php?id=61556410492577" target="_blank" role="button">Click to View</a>
+        </div>
+      </div>
+      </div>
+      <br><br><br>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="Img\TSP.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Takipsilim Productions</h3>
+          <p>Film production</p>
+          <p>Role/s: Social media manager, marketing head, and graphic artist</p>
+          <a class="btn btn-primary" href="https://web.facebook.com/profile.php?id=61572829874306" target="_blank" role="button">Click to View</a>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="row">
+        <div class="col">
+          <img src="Img\PH.png" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h3>Project Harana</h3>
+          <p>Thesis and film production page</p>
+          <p>Role/s: Social media manager, marketing head, and graphic artist</p>
+          <a class="btn btn-primary" href="https://web.facebook.com/profile.php?id=61575634710005" target="_blank" role="button">Click to View</a>
+        </div>
+      </div>
+      </div>      
+      </div>
+      </body>
+
+      <script>// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} </script>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.0/mdb.umd.min.js"
+></script>
+    <script>
+
+      const radios = document.querySelectorAll('input[name="btnradio"]');
+      const sections = document.querySelectorAll('.content-section');
+
+      radios.forEach(radio => {
+        radio.addEventListener('change', () => {
+          sections.forEach(sec => sec.classList.remove('active'));
+          document.getElementById(radio.id + '-content').classList.add('active');
+        });
+      });
+    </script>
+<script src="https://cdnc.heyzine.com/release/addons.5.min.js" style="display:none;" onload="heyzinea.addons.init();"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</html>
